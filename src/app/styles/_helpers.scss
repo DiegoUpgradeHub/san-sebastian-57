@@ -1,0 +1,40 @@
+
+// Display flex
+@mixin displayFlex ($flow, $justify, $align) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//FONTS MIXINs
+@mixin bold12 () {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+}
+@mixin bold14 () {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+}
+@mixin bold16 () {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+}
+@mixin medium12 () {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+}
+@mixin medium14 () {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+}
+@mixin medium16 () {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+}

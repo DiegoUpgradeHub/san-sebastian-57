@@ -1,0 +1,78 @@
+<div class="homeContainer">
+  <div class="logo">
+    <img src="../../../assets/images/logo.png" alt="logo">
+  </div>
+  <!--Left block-->
+  <div class="video">
+    <img src="../../../assets/images/video-image.png" alt="video-cover-image">
+  </div>
+  <!--Right block-->
+  <div class="infoContainer">
+    <div class="introText">
+      <h3>{{ 'Restaurante wine & bar' | translate }}</h3>
+      <h1>San Sebastián 57</h1>
+      <p>{{ 'Espacio gastronómico en el que disfrutar de una cocina cuidada en un ambiente.' | translate }}</p>
+    </div>
+    <div class="reviewsContainer">
+      <a href="https://www.google.com/search?sca_esv=590654907&rlz=1C5CHFA_enES818ES818&sxsrf=AM9HkKl4iWdkloPK2_dbC67g7Iu5hFw4vg:1702502026080&uds=AMIYvT9uvvi_IJpmFIzycmiNp8DpNjNbeZRCO4C4R2rWm057kJg32IWLclSVne3rLXPyp1jN7-Q8tKT0Aockm32ZCj9P94STSXRWJ_ERU1bTzMXFy0nmIGpSqCjwhyJqCG5_dzZRbpUt&si=ALGXSla_WCGdkD9yT_jdHrUlk6LMkmNSL3U2mfjKFmuVN40wv5RcbCQ1ZF6KDdkvkTmZQXghCuUq63ZAQXVML-xu0x62frylGEjVJADTVnv2TuG0b6Pk1W4%3D&q=San+Sebasti%C3%A1n+57+Rese%C3%B1as&sa=X&ved=2ahUKEwiDovmjqo2DAxV0nf0HHb_4BVwQ3PALegQIXhAF&biw=1440&bih=758&dpr=2" target="_blank">
+        <img class="review" src="../../../assets/images/review-google.png" alt="reviews google">
+      </a>
+      <a href="https://guide.michelin.com/de/de/canarias/santa-cruz-de-tenerife/restaurant/san-sebastian-57" target="_blank">
+        <img class="review" src="../../../assets/images/review-michelin.png" alt="reviews michelin">
+      </a>
+      <a href="https://www.guiarepsol.com/es/fichas/restaurante/san-sebastian-57-14297/" target="_blank">
+        <img class="review" src="../../../assets/images/review-repsol.png" alt="reviews repsol">
+      </a>
+    </div>
+
+    <!-- RESERVAS -->
+    <div class="bookingContainer">
+      <p>{{ 'Es necesario hacer una reserva' | translate }}</p>
+      <div class="button">
+        <p>{{ 'Reservar' | translate }}</p>
+      </div>
+    </div>
+
+    <!--CARDS BUTTONS-->
+    <div class="cardsContainer">
+      <a class="card-button" href="https://carta.sansebastian57.com/" target="_blank" >
+        <p>{{ 'Menu' | translate }}</p>
+        <img src="../../../assets/images/card-menu.png" alt="menu-button">
+      </a>
+      <div class="card-button" routerLink="/" >
+        <p>{{ 'Equipo' | translate }}</p>
+        <img src="../../../assets/images/card-equipo.png" alt="equipo-button">
+      </div>
+      <div class="card-button" routerLink="/" >
+        <p>{{ 'Contacto' | translate }}</p>
+        <img src="../../../assets/images/card-contacto.png" alt="contacto-button">
+      </div>
+    </div>
+
+    <!--Galería-->
+    <div class="galleryContainer">
+      <img src="../../../assets/images/galeria-01.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-02.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-03.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-04.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-05.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-06.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-07.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+      <img src="../../../assets/images/galeria-08.png" alt="imagen comida" data-bs-toggle="modal" data-bs-target="#galleryModal"/>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="galleryModalLabel">{{ 'Galería' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
