@@ -28,7 +28,7 @@
     <!-- RESERVAS -->
     <div class="bookingContainer">
       <p>{{ 'Es necesario hacer una reserva' | translate }}</p>
-      <div class="button">
+      <div class="button" data-bs-toggle="modal" data-bs-target="#bookingModal">
         <p>{{ 'Reservar' | translate }}</p>
       </div>
     </div>
@@ -43,7 +43,7 @@
         <p>{{ 'Equipo' | translate }}</p>
         <img src="../../../assets/images/card-equipo.png" alt="equipo-button">
       </div>
-      <div class="card-button" routerLink="/" >
+      <div class="card-button" data-bs-toggle="modal" data-bs-target="#contactModal" >
         <p>{{ 'Contacto' | translate }}</p>
         <img src="../../../assets/images/card-contacto.png" alt="contacto-button">
       </div>
@@ -62,7 +62,37 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal reservar -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="bookingModalLabel">{{ 'Reservar' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>reservar</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">{{ 'Contacto' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>contacto</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal galería -->
 <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true" data-bs-theme="dark">
   <div class="modal-dialog">
     <div class="modal-content modal-content-dark">
@@ -71,7 +101,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <app-gallery></app-gallery>
       </div>
     </div>
   </div>

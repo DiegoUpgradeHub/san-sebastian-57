@@ -10,12 +10,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from '../pages/home/home.component'
+import { GalleryComponent } from '../pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { HomeComponent } from '../pages/home/home.component'
   exports: [
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent
   ]
 })
 export class SharedModule { }
