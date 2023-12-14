@@ -27,7 +27,7 @@
 
     <!-- RESERVAS -->
     <div class="bookingContainer">
-      <p>{{ 'Es necesario hacer una reserva' | translate }}</p>
+      <p>{{ 'Es necesario reservar una mesa.' | translate }}</p>
       <div class="button" data-bs-toggle="modal" data-bs-target="#bookingModal">
         <p>{{ 'Reservar' | translate }}</p>
       </div>
@@ -79,14 +79,14 @@
 
 <!-- Modal contacto -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true" data-bs-theme="dark">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content modal-content-dark">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="contactModalLabel">{{ 'Contacto' | translate }}</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <p>contacto</p>
+      <div class="modal-body contactContainer">
+        <app-contact></app-contact>
       </div>
     </div>
   </div>

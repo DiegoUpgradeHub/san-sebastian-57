@@ -1,0 +1,24 @@
+@import "../../styles/helpers";
+
+.contactContainer {
+  @include displayFlex(row wrap, center, flex-start);
+  width: 100%;
+  .textContainer {
+    width: 100%;
+    max-width: 600px;
+    .socialMedia {
+      width: 100%;
+      @include displayFlex(row wrap, flex-start, center);
+      img {
+        width: 50px;
+        margin: 10px;
+      }
+    }
+  }
+  iframe {
+    @include displayFlex(row wrap, center, center);
+    border-radius: 1.2rem;
+    // width: 100%;
+    filter: invert(95%) hue-rotate(180deg);
+  }
+}

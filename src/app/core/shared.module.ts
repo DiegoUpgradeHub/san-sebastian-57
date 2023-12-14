@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from '../pages/home/home.component'
+import { ContactComponent } from '../pages/contact/contact.component';
 import { GalleryComponent } from '../pages/gallery/gallery.component';
 
 @NgModule({
@@ -17,7 +18,8 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    GalleryComponent
+    ContactComponent,
+    GalleryComponent,
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    GalleryComponent
+    ContactComponent,
+    GalleryComponent,
   ]
 })
 export class SharedModule { }
