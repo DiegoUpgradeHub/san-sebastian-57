@@ -1,0 +1,10 @@
+@import "../../styles/helpers";
+
+.teamContainer {
+  img {
+    @include displayFlex(row wrap, center, center);
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 1.3rem;
+  }
+}

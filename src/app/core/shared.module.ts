@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from '../pages/home/home.component'
 import { BookingComponent } from '../pages/booking/booking.component';
+import { TeamComponent } from '../pages/team/team.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { GalleryComponent } from '../pages/gallery/gallery.component';
 
@@ -20,6 +21,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     FooterComponent,
     HomeComponent,
     BookingComponent,
+    TeamComponent,
     ContactComponent,
     GalleryComponent,
   ],
@@ -37,6 +39,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     FooterComponent,
     HomeComponent,
     BookingComponent,
+    TeamComponent,
     ContactComponent,
     GalleryComponent,
   ]
