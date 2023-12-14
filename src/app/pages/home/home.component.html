@@ -4,7 +4,8 @@
   </div>
   <!--Left block-->
   <div class="video">
-    <img src="../../../assets/images/gif-intro.gif" alt="video-cover-image">
+    <div *ngIf="gifLoading" class="spinner-border gifLoading" role="status"><span class="visually-hidden">Loading...</span></div>
+    <img (load)="gifLoad()" src="../../../assets/images/gif-intro.gif" alt="video-cover-image">
   </div>
   <!--Right block-->
   <div class="infoContainer">

@@ -16,8 +16,13 @@
 }
 
 .video {
+  @include displayFlex (column nowrap, center, center);
   background-image: linear-gradient(to bottom, #141414, #141414);
   width: 45%;
+  .gifLoading {
+    position: absolute;
+    top: 235px;
+  }
   img {
     width: 100%;
     opacity: 0.3;
