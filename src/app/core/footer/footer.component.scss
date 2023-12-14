@@ -1,0 +1,52 @@
+@import '../../styles/helpers';
+
+.footerContainer {
+  z-index: 100;
+  @include displayFlex(column wrap, center, center);
+  @include medium14();
+  background-color: #080808;
+  padding: 20px;
+  margin: 30px 0 0 0;
+  width: 100%;
+
+  .navegation {
+    @include displayFlex(row wrap, center, center);
+    width: 95%;
+
+    .menu {
+      @include displayFlex(row wrap, center, center);
+      p {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+    .languages, .socialMedia {
+      @include displayFlex(row nowrap, center, center);
+      img {
+        width: 25px;
+        margin: 10px;
+      }
+    }
+
+  }
+
+  .legal {
+    @include displayFlex(row wrap, center, center);
+    a {
+      padding: 0 10px;
+      margin: 8px 0;
+    }
+
+  }
+
+}
+
+//Media querys
+@media (min-width: 900px) and (min-height: 791px) {
+  .footerContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+}

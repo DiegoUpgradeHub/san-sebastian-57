@@ -1,1 +1,74 @@
-<p>footer works!</p>
+<div class="footerContainer">
+  <div class="navegation">
+    <div class="menu">
+      <p data-bs-toggle="modal" data-bs-target="#bookingModal">{{ 'Reservar' | translate }}</p>
+      <a class="card-button" href="https://carta.sansebastian57.com/" target="_blank" >
+        <p>{{ 'Menu' | translate }}</p>
+      </a>
+      <p data-bs-toggle="modal" data-bs-target="#galleryModal">{{ 'Galería' | translate }}</p>
+      <p data-bs-toggle="modal" data-bs-target="#contactModal">{{ 'Contacto' | translate }}</p>
+    </div>
+    <div class="languages">
+      <img (click)="setSpanish()" src="../../../assets/images/es-flag.png" alt="spanish">
+      <img (click)="setEnglish()" src="../../../assets/images/en-flag.png" alt="english">
+      <img (click)="setGerman()" src="../../../assets/images/de-flag.png" alt="german">
+      <a href="https://www.instagram.com/sansebastian57/?hl=es" target="_blank">
+        <img src="../../../assets/images/instagram.png" alt="instagram">
+      </a>
+      <a href="https://www.facebook.com/sansebastian57" target="_blank">
+        <img src="../../../assets/images/facebook.png" alt="facebook">
+      </a>
+    </div>
+  </div>
+
+  <div class="legal">
+    <a href="" target="_blank">{{ 'Aviso legal' | translate }}</a>
+    <a href="" target="_blank">{{ 'Política de cookies' | translate }}</a>
+    <a href="https://diegoperez.vercel.app/home" target="_blank">{{ 'Copyright Diego Pérez, 2023' | translate }}</a>
+  </div>
+</div>
+
+<!-- Modal reservar -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="bookingModalLabel">{{ 'Reservar' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-booking></app-booking>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">{{ 'Contacto' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body contactContainer">
+        <app-contact></app-contact>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal galería -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="galleryModalLabel">{{ 'Galería' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-gallery></app-gallery>
+      </div>
+    </div>
+  </div>
+</div>
