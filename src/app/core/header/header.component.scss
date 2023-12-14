@@ -1,5 +1,8 @@
+@import '../../styles/helpers';
+
 .menuContainer {
   z-index: 100;
+  @include displayFlex(column nowrap, flex-end, flex-end);
   position: fixed;
   top: 50px;
   right: 50px;
@@ -9,9 +12,33 @@ img {
   width: 50px;
 }
 
+.menuBox {
+  text-align: right;
+  p {
+    padding: 10px;
+  }
+  img {
+    width: 30px;
+    margin: 5px;
+  }
+}
+
 @media (max-width: 510px) {
   .menuContainer {
     top: 15px;
     right:15px;
   }
+}
+
+
+//Dark backrgound styles
+.background {
+  z-index:90;
+  background: black;
+  opacity: 0.8;
+  position: fixed;
+  bottom:0;
+  top:0;
+  right:0;
+  left:0;
 }

@@ -7,6 +7,7 @@
       </a>
       <p data-bs-toggle="modal" data-bs-target="#galleryModal">{{ 'Galería' | translate }}</p>
       <p data-bs-toggle="modal" data-bs-target="#contactModal">{{ 'Contacto' | translate }}</p>
+      <p data-bs-toggle="modal" data-bs-target="#teamModal">{{ 'Equipo' | translate }}</p>
     </div>
     <div class="languages">
       <img (click)="setSpanish()" src="../../../assets/images/es-flag.png" alt="spanish">
@@ -38,6 +39,21 @@
       </div>
       <div class="modal-body">
         <app-booking></app-booking>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal equipo -->
+<div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true" data-bs-theme="dark">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content modal-content-dark">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="teamModalLabel">{{ 'Equipo' | translate }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-team></app-team>
       </div>
     </div>
   </div>

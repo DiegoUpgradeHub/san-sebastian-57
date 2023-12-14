@@ -1,3 +1,20 @@
 <div class="menuContainer">
-  <img src="../../../assets/images/menu-icon.png" alt="menu-icon">
+  <img (click)="showHideMenu()" src="../../../assets/images/menu-icon.png" alt="menu-icon" >
+
+  <div class="menuBox" *ngIf="showMenu">
+    <p (click)="showHideMenu()" data-bs-toggle="modal" data-bs-target="#bookingModal">{{ 'Reservar' | translate }}</p>
+    <a (click)="showHideMenu()" href="https://carta.sansebastian57.com/" target="_blank" ><p>{{ 'Menu' | translate }}</p></a>
+    <p (click)="showHideMenu()" data-bs-toggle="modal" data-bs-target="#galleryModal">{{ 'Galería' | translate }}</p>
+    <p (click)="showHideMenu()" data-bs-toggle="modal" data-bs-target="#contactModal">{{ 'Contacto' | translate }}</p>
+    <p (click)="showHideMenu()" data-bs-toggle="modal" data-bs-target="#teamModal">{{ 'Equipo' | translate }}</p>
+
+    <div class="languages">
+      <img (click)="setSpanish()" src="../../../assets/images/es-flag.png" alt="spanish">
+      <img (click)="setEnglish()" src="../../../assets/images/en-flag.png" alt="english">
+      <img (click)="setGerman()" src="../../../assets/images/de-flag.png" alt="german">
+    </div>
+  </div>
+
 </div>
+
+<div class="background" (click)="showHideMenu()" *ngIf="showMenu"></div>
