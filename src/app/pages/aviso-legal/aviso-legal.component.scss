@@ -1,0 +1,25 @@
+@import '../../styles/helpers';
+
+.legalContainer {
+  @include displayFlex(column nowrap, flex-start, center);
+  // width: 100%;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  padding: 70px 0;
+  background: black;
+
+}
+
+.textBlock {
+  @include displayFlex(column nowrap, center, center);
+  width: 100%;
+  max-width: 678px;
+  padding: 40px;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  width: 100%;
+}

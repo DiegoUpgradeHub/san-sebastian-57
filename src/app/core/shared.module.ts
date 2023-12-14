@@ -14,6 +14,7 @@ import { BookingComponent } from '../pages/booking/booking.component';
 import { TeamComponent } from '../pages/team/team.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { GalleryComponent } from '../pages/gallery/gallery.component';
+import { AvisoLegalComponent } from '../pages/aviso-legal/aviso-legal.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     TeamComponent,
     ContactComponent,
     GalleryComponent,
+    AvisoLegalComponent
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     TeamComponent,
     ContactComponent,
     GalleryComponent,
+    AvisoLegalComponent
   ]
 })
 export class SharedModule { }
