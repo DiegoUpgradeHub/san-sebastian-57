@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from '../pages/home/home.component'
+import { BookingComponent } from '../pages/booking/booking.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { GalleryComponent } from '../pages/gallery/gallery.component';
 
@@ -18,6 +19,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    BookingComponent,
     ContactComponent,
     GalleryComponent,
   ],
@@ -34,6 +36,7 @@ import { GalleryComponent } from '../pages/gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    BookingComponent,
     ContactComponent,
     GalleryComponent,
   ]

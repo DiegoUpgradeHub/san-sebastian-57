@@ -1,0 +1,11 @@
+@import "../../styles/helpers";
+
+.bookingContainer {
+  @include displayFlex(row wrap, center, flex-start);
+  width: 100%;
+  iframe {
+    @include displayFlex(row wrap, center, center);
+    border-radius: 1.2rem;
+    filter: invert(95%) hue-rotate(180deg);
+  }
+}
